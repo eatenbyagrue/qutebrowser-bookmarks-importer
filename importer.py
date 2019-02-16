@@ -19,6 +19,16 @@
 # You should have received a copy of the GNU General Public License
 # along with qutebrowser.  If not, see <http://www.gnu.org/licenses/>.
 
+"""This tool imports data from browsers into qutebrowser format.
+I added the support for tags from Firefox (currently: 64.0.2) HTML data.
+The tags will be prefixed to the title and the url.
+
+USAGE: $ python importer.py bookmarks.html -qB > quickmarks
+
+Backup your .config/qutebrowser/quickmarks file first!
+
+- Conrad
+"""
 
 """Tool to import data from other browsers.
 
